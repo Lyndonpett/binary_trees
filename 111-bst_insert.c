@@ -23,7 +23,7 @@ bst_t *bst_insert(bst_t **tree, int value)
 	{	/* if address is empty, insert, otherwise run bst_insert again */
 		if ((*tree)->left == NULL)
 		{
-			(*tree)-> left = binary_tree_node(*tree, value);
+			(*tree)->left = binary_tree_node(*tree, value);
 			return ((*tree)->left);
 		}
 		return (bst_insert(&((*tree)->left), value));
